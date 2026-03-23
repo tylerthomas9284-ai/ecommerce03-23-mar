@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop Clothiva women's clothing with search, filters, wishlist, and add to cart features for USA shoppers.">
+  <title>Shop | Clothiva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span>New USA arrivals land weekly.</span>
+      <span>Wishlist, search, and add to cart from one catalog.</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">Clothiva</span>
+        <span class="brand-note">USA Women's Fashion</span>
+      </a>
+      <div class="nav-wrap" data-nav-wrap>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="services.html">Services</a>
+          <a href="faq.html">FAQ</a>
+          <a href="help.html">Help</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-tools">
+          <form class="search-form" data-search-form>
+            <input type="search" name="q" placeholder="Search Clothiva">
+            <button class="icon-button" type="submit">Search</button>
+          </form>
+          <a class="pill-link" href="#wishlist">Liked <span data-wishlist-count>0</span></a>
+          <a class="pill-link" href="checkout.html">Cart <span data-cart-count>0</span></a>
+        </div>
+      </div>
+      <button class="menu-toggle" type="button" data-menu-toggle>Menu</button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-card">
+      <p class="eyebrow">Shop all</p>
+      <h1>Fashion-driven products with conversion-ready filtering.</h1>
+      <p class="lead">Search by keyword, browse by category, or narrow by color, size, and price to simulate a polished online womenswear storefront.</p>
+    </div>
+  </section>
+
+  <main class="shop-layout">
+    <aside class="filter-panel">
+      <div>
+        <p class="eyebrow">Filters</p>
+        <h2 style="margin:0.4rem 0 0;">Shop Clothiva</h2>
+      </div>
+      <form data-filter-form>
+        <div class="filter-group">
+          <label for="search">Search</label>
+          <input id="search" name="search" type="search" placeholder="Search product name">
+        </div>
+        <div class="filter-group">
+          <label for="category">Category</label>
+          <select id="category" name="category">
+            <option value="">All categories</option>
+            <option value="Dresses">Dresses</option>
+            <option value="Tops">Tops</option>
+            <option value="Activewear">Activewear</option>
+            <option value="Loungewear">Loungewear</option>
+            <option value="Party Wear">Party Wear</option>
+            <option value="Accessories">Accessories</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="tag">Drop type</label>
+          <select id="tag" name="tag">
+            <option value="">All drops</option>
+            <option value="new">New</option>
+            <option value="trending">Trending</option>
+            <option value="bestseller">Best seller</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="color">Color</label>
+          <select id="color" name="color">
+            <option value="">All colors</option>
+            <option value="Black">Black</option>
+            <option value="Rose">Rose</option>
+            <option value="Olive">Olive</option>
+            <option value="Beige">Beige</option>
+            <option value="Ivory">Ivory</option>
+            <option value="Blue">Blue</option>
+            <option value="Gold">Gold</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="size">Size</label>
+          <select id="size" name="size">
+            <option value="">All sizes</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="One Size">One Size</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="price">Price range</label>
+          <select id="price" name="price">
+            <option value="">All prices</option>
+            <option value="0-60">Under $60</option>
+            <option value="60-90">$60 to $90</option>
+            <option value="90-130">$90 to $130</option>
+          </select>
+        </div>
+      </form>
+    </aside>
+
+    <section>
+      <div class="toolbar">
+        <div>
+          <p class="eyebrow">Catalog</p>
+          <h2 style="margin:0.45rem 0 0;">Product grid</h2>
+        </div>
+        <div class="results-note" data-results-note>0 styles available</div>
+      </div>
+      <div class="product-grid" data-shop-grid></div>
+
+      <section class="section" id="wishlist">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Liked products</p>
+            <h2>Saved wishlist styles</h2>
+          </div>
+          <p>Customers can like items and review them later before checkout.</p>
+        </div>
+        <div class="product-grid" data-wishlist-grid></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-card"><strong>Clothiva</strong><p>Trend-led womenswear for the USA market.</p></div>
+      <div class="footer-card"><h3>Support</h3><div class="footer-links"><a href="help.html">Help</a><a href="returns.html">Return Policy</a><a href="payments.html">Payment Methods</a></div></div>
+      <div class="footer-card"><h3>Legal</h3><div class="footer-links"><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="cookies.html">Cookies</a></div></div>
+      <div class="footer-card"><h3>Company</h3><div class="footer-links"><a href="about.html">About</a><a href="services.html">Services</a><a href="feedback.html">Feedback</a></div></div>
+      <div class="footer-card"><h3>Contact</h3><div class="footer-links"><a href="contact.html">Contact Us</a><a href="faq.html">FAQ</a><a href="checkout.html">Checkout</a></div></div>
+    </div>
+  </footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

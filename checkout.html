@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Secure Clothiva checkout with card, wallet, BNPL, and cash on delivery payment methods.">
+  <title>Checkout | Clothiva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span>Encrypted checkout experience for USA orders.</span>
+      <span>Cards, PayPal, Apple Pay, Google Pay, Shop Pay, Klarna, Afterpay, and COD.</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">Clothiva</span>
+        <span class="brand-note">USA Women's Fashion</span>
+      </a>
+      <div class="nav-wrap" data-nav-wrap>
+        <nav class="main-nav">
+          <a href="shop.html">Shop</a>
+          <a href="payments.html">Payment Methods</a>
+          <a href="returns.html">Return Policy</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Customer Service</a>
+        </nav>
+        <div class="header-tools">
+          <a class="pill-link" href="shop.html#wishlist">Liked <span data-wishlist-count>0</span></a>
+          <a class="pill-link" href="checkout.html">Cart <span data-cart-count>0</span></a>
+        </div>
+      </div>
+      <button class="menu-toggle" type="button" data-menu-toggle>Menu</button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-card">
+      <p class="eyebrow">Secure checkout</p>
+      <h1>Fast, professional purchase flow for a USA audience.</h1>
+      <p class="lead">This checkout keeps payment flexibility visible and positions support, returns, and legal consent clearly before order placement.</p>
+    </div>
+  </section>
+
+  <main class="checkout-layout">
+    <section class="checkout-panel">
+      <p class="eyebrow">Shipping and payment</p>
+      <h1>Complete your order</h1>
+      <form data-checkout-form>
+        <div class="field-grid">
+          <label class="field">First Name<input type="text" required></label>
+          <label class="field">Last Name<input type="text" required></label>
+        </div>
+        <div class="field-grid">
+          <label class="field">Email<input type="email" required></label>
+          <label class="field">Phone<input type="tel" required></label>
+        </div>
+        <label class="field">Street Address<input type="text" required></label>
+        <div class="field-grid">
+          <label class="field">City<input type="text" required></label>
+          <label class="field">State<input type="text" required></label>
+        </div>
+        <div class="field-grid">
+          <label class="field">ZIP Code<input type="text" required></label>
+          <label class="field">Delivery Method<select required><option>Standard Shipping</option><option>Express Shipping</option></select></label>
+        </div>
+
+        <div>
+          <strong>Payment methods</strong>
+          <div class="payment-options" style="margin-top:0.8rem;">
+            <div class="pay-card"><span>Visa, Mastercard, Amex, Discover</span><span>Cards</span></div>
+            <div class="pay-card"><span>PayPal</span><span>Wallet</span></div>
+            <div class="pay-card"><span>Apple Pay, Google Pay, Shop Pay</span><span>Express</span></div>
+            <div class="pay-card"><span>Klarna, Afterpay</span><span>Pay later</span></div>
+            <div class="pay-card"><span>Cash on Delivery</span><span>COD</span></div>
+          </div>
+        </div>
+
+        <label class="field">Preferred Payment Method
+          <select required>
+            <option>Credit or Debit Card</option>
+            <option>PayPal</option>
+            <option>Apple Pay</option>
+            <option>Google Pay</option>
+            <option>Shop Pay</option>
+            <option>Klarna</option>
+            <option>Afterpay</option>
+            <option>Cash on Delivery (COD)</option>
+          </select>
+        </label>
+
+        <label class="field">Order Notes<textarea placeholder="Apartment, delivery notes, or gift instructions"></textarea></label>
+        <label class="field"><input type="checkbox" required> I agree to the <a href="terms.html">Terms and Conditions</a>, <a href="privacy.html">Privacy Policy</a>, and <a href="cookies.html">Cookies notice</a>.</label>
+        <button class="button primary" type="submit">Place Secure Order</button>
+        <p class="legal-note">This is a front-end demo checkout. No real transaction is processed.</p>
+      </form>
+    </section>
+
+    <aside class="checkout-summary">
+      <p class="eyebrow">Order summary</p>
+      <h2 style="margin:0.4rem 0 1rem;">Cart</h2>
+      <div class="cart-items" data-cart-items></div>
+      <div class="cart-total-row">
+        <span>Total</span>
+        <span data-cart-total>$0.00</span>
+      </div>
+    </aside>
+  </main>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
